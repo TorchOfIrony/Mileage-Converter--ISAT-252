@@ -1,0 +1,50 @@
+<html>
+
+<head>
+<title>MPG to l/100km Converter</title>
+<script language="javascript">
+
+function test()
+{
+	var x = document.testform.mpg.value;
+
+	x = 100/((x * 1.609) / 3.78);
+	
+	document.testform.result.value = x;
+}
+function test2()
+{
+	var x = document.testform.litre.value;
+
+	x = ((100 / x) * 3.78) / 1.609;
+
+	document.testform.result.value = x;
+}
+
+</script>
+</head>
+
+<body background="pics/Untitled.gif">
+
+<blockquote>
+  <p><font face="Verdana" color="#008080"><em><big><big>MPG to l/100km Converter</big></big><br>
+  </em></font></p>
+</blockquote>
+
+<blockquote>
+  <p><font color="#008080"><img src="pics/colorbar.gif" width="450" height="1"></font></p>
+</blockquote>
+
+<blockquote>
+  <form name="testform">
+    <blockquote>
+      <p><font face="Verdana" color="#008080">MPG:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="mpg" size="8"><input type="button" value="Calculate" name="B1" onclick="test()"></font></p>
+      <p><font face="Verdana" color="#008080">l/100km: <input type="text" name="litre" size="8"><input type="button" value="Calculate" name="B1" onclick="test2()"></font></p>
+      <p><font face="Verdana" color="#008080">Result:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="result" size="8"></font></p>
+      <p><font face="Verdana" color="#008080"><input type="reset" value="Reset" name="B2"><input type="button" value="Exit" name="B3" OnClick="window.close()"></font></p>
+    </blockquote>
+  </form>
+</blockquote>
+
+</body>
+</html>
